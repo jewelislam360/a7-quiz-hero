@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="index.html"><button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+                    id="blog_btn">
+                    Blog
+                </button></a>
+
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <main class="w-50% mx-auto">
+        <!-- question section start -->
+        <section>
+            <label for="my-modal" class="btn">map(), filter(), forEach(), find() What's the difference?</label>
+
+            <!-- Put this part before </body> tag -->
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">map(), filter(), forEach(), find() the difference!</h3>
+                    <p class="py-4"><b>map()</b> --> transform each item in an array and output to a new array without altering the original array <br>
+                        <b>filter</b> --> remove items of an array based on some criteria without altering the original array <br>
+                        <b>forEach</b> --> perform some function on each item of an array
+                        <b>find()</b>--> method is an iterative method. It calls a provided callbackFn function once for each element in an array in ascending-index orde
+                    
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <label for="my-modal" class="btn">Difference between Local Storage, Session Storage, and Cookies?</label>
+
+            
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Local Storage, Session Storage, and Cookies</h3>
+                    <p class="py-4"><b>Local Storage</b>--> The stored data is not deleted when the browser is closed. <br>
+                        <b>Session Storage</b>--> The data is stored only for the session and will be deleted when the browser is closed. <br>
+                        <b>Cookies</b> --> The data can be set to expire at a certain time.
+                        
+                    
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
 </body>
+
 </html>
